@@ -9,6 +9,7 @@ const signoId = urlParams.get('id');
 editSignoForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
+    //Hay un problema cargando el form y los datos pero no muestra error en consola.
     const updatedSigno = {
         posic: parseInt(document.getElementById('txtPosic').value),
         signo: document.getElementById('txtSigno').value,
